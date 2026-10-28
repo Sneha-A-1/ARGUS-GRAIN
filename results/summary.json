@@ -1,0 +1,203 @@
+{
+  "identification": {
+    "ARGUS": {
+      "macro_f1": 0.7482,
+      "f1_urgent": 1.0,
+      "f1_strategic": 0.3058,
+      "f1_redundant": 0.9388,
+      "urgent_recall": 100.0,
+      "retention_pct": 62.5801,
+      "fidelity_err_pct": 0.2096,
+      "throughput_kps": 54.6417,
+      "retention_ci95": 2.374
+    },
+    "DECIMATE": {
+      "macro_f1": 0.6393,
+      "f1_urgent": 1.0,
+      "f1_strategic": 0.0788,
+      "f1_redundant": 0.839,
+      "urgent_recall": 100.0,
+      "retention_pct": 68.2416,
+      "fidelity_err_pct": 0.5293,
+      "throughput_kps": 53209.2002,
+      "retention_ci95": 1.799
+    },
+    "RF": {
+      "macro_f1": 0.9975,
+      "f1_urgent": 1.0,
+      "f1_strategic": 0.9927,
+      "f1_redundant": 0.9997,
+      "urgent_recall": 100.0,
+      "retention_pct": 59.6105,
+      "fidelity_err_pct": 0.9949,
+      "throughput_kps": 172.9652,
+      "retention_ci95": 2.712
+    },
+    "SENDDELTA": {
+      "macro_f1": 0.8588,
+      "f1_urgent": 1.0,
+      "f1_strategic": 0.6063,
+      "f1_redundant": 0.97,
+      "urgent_recall": 100.0,
+      "retention_pct": 61.9066,
+      "fidelity_err_pct": 0.2966,
+      "throughput_kps": 1331.8145,
+      "retention_ci95": 2.408
+    },
+    "STOREALL": {
+      "macro_f1": 0.3636,
+      "f1_urgent": 1.0,
+      "f1_strategic": 0.0908,
+      "f1_redundant": 0.0,
+      "urgent_recall": 100.0,
+      "retention_pct": 100.0,
+      "fidelity_err_pct": 0.0,
+      "throughput_kps": 109710.2345,
+      "retention_ci95": 0.0
+    }
+  },
+  "strategic": {
+    "ARGUS": {
+      "vwc_err_pct": 0.0772,
+      "stemp_err_pct": 0.0214,
+      "degreehour_err_pct": 0.0567,
+      "p10_err_pct": 0.0
+    },
+    "DECIMATE": {
+      "vwc_err_pct": 0.0581,
+      "stemp_err_pct": 0.0121,
+      "degreehour_err_pct": 0.0322,
+      "p10_err_pct": 0.0
+    },
+    "RF": {
+      "vwc_err_pct": 1.0099,
+      "stemp_err_pct": 0.168,
+      "degreehour_err_pct": 0.4567,
+      "p10_err_pct": 0.0
+    },
+    "SENDDELTA": {
+      "vwc_err_pct": 0.2104,
+      "stemp_err_pct": 0.0393,
+      "degreehour_err_pct": 0.1025,
+      "p10_err_pct": 0.0
+    }
+  },
+  "retrieval": {
+    "GRAIN": {
+      "q1_ms": 0.0104,
+      "q2_ms": 0.0116,
+      "q3_ms": 0.014,
+      "q4_ms": 0.0081,
+      "build_s": 0.012,
+      "footprint_mb": 0.1192
+    },
+    "MATVIEW": {
+      "q1_ms": 0.0144,
+      "q2_ms": 0.0165,
+      "q3_ms": 0.0523,
+      "q4_ms": 0.016,
+      "build_s": 0.0008,
+      "footprint_mb": 0.082
+    },
+    "RAWSCAN": {
+      "q1_ms": 0.0146,
+      "q2_ms": 0.0181,
+      "q3_ms": 0.0542,
+      "q4_ms": 0.017,
+      "build_s": 0.0003,
+      "footprint_mb": 0.0819
+    },
+    "TIMEIDX": {
+      "q1_ms": 0.0146,
+      "q2_ms": 0.0167,
+      "q3_ms": 0.0524,
+      "q4_ms": 0.0171,
+      "build_s": 0.0004,
+      "footprint_mb": 0.0819
+    }
+  },
+  "tolerance_sweep": {
+    "0.5": {
+      "ARGUS": {
+        "retention_pct": 64.92,
+        "fidelity_err_pct": 0.1147
+      },
+      "SENDDELTA": {
+        "retention_pct": 65.14,
+        "fidelity_err_pct": 0.1615
+      }
+    },
+    "0.75": {
+      "ARGUS": {
+        "retention_pct": 63.19,
+        "fidelity_err_pct": 0.175
+      },
+      "SENDDELTA": {
+        "retention_pct": 63.24,
+        "fidelity_err_pct": 0.2405
+      }
+    },
+    "1.0": {
+      "ARGUS": {
+        "retention_pct": 62.24,
+        "fidelity_err_pct": 0.2214
+      },
+      "SENDDELTA": {
+        "retention_pct": 62.02,
+        "fidelity_err_pct": 0.3231
+      }
+    },
+    "1.5": {
+      "ARGUS": {
+        "retention_pct": 61.12,
+        "fidelity_err_pct": 0.3228
+      },
+      "SENDDELTA": {
+        "retention_pct": 60.77,
+        "fidelity_err_pct": 0.4465
+      }
+    },
+    "2.0": {
+      "ARGUS": {
+        "retention_pct": 60.77,
+        "fidelity_err_pct": 0.3806
+      },
+      "SENDDELTA": {
+        "retention_pct": 60.1,
+        "fidelity_err_pct": 0.5565
+      }
+    },
+    "3.0": {
+      "ARGUS": {
+        "retention_pct": 60.3,
+        "fidelity_err_pct": 0.4844
+      },
+      "SENDDELTA": {
+        "retention_pct": 59.23,
+        "fidelity_err_pct": 0.7977
+      }
+    }
+  },
+  "wilcoxon": {
+    "fidelity_argus_vs_senddelta": 0.001953125,
+    "fidelity_argus_vs_rf": 0.001953125,
+    "q1_grain_vs_timeidx": 0.001953125,
+    "q3_grain_vs_timeidx": 0.001953125
+  },
+  "dataset": {
+    "records": 185711,
+    "nodes": 38,
+    "plots": 5,
+    "depths": 8,
+    "timesteps": 5090,
+    "days": 107.1,
+    "test_records": 27250,
+    "urgent_pct": 27.25,
+    "strategic_pct": 9.28,
+    "redundant_pct": 63.47,
+    "qf_pass_pct": 60.3,
+    "vwc_mean": 0.252,
+    "sic_mean": 1577.7,
+    "stemp_mean": 22.62
+  }
+}
